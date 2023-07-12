@@ -18,9 +18,13 @@ img.emoji {
     padding: 0px;
     box-sizing: border-box;
 }
-span {
+/*body{
+    background-color: black;
+}*/
+.blue {
     color: var(--blue)
 }
+/* Navbar */
 nav{
     background: var(--violet);
     display: flex;
@@ -67,33 +71,35 @@ nav ul li a:hover::after{
     width: 100%;
     transition: .5s ease-out;
 }
+/* Navbar end */
+/* Landing Page */
 #LandingPage {
-    background: #8F00FF;
+    background: linear-gradient(360deg, #000 0%, #8F00FF 100%);
     color: white;
     font-family: var(--font-family);
+    padding: 30px 10%;
     display: flex;
-    align-items: center; 
-}
-.Lead {
-    padding: 10px 5%;
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-
-.Lead .Lead__TextHolder h2{
+.LandingPage__TextHolder h2{
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 15px;
 }
-.Lead .Lead__TextHolder p {
+.LandingPage__TextHolder p {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;        
 }
-.Lead .Lead__Image img{
+.LandingPage__Image img{
     width: 500px;
     height: 327px;
+}
+/* Landing Page end */ 
+@media (max-width: 1000px){
+
 }
