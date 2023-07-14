@@ -20,9 +20,10 @@ img.emoji {
     padding: 0px;
     box-sizing: border-box;
 }
-/*body{
+body{
     background-color: black;
-}*/
+}
+/* Spans */
 .blue {
     color: var(--blue);
 }
@@ -42,6 +43,10 @@ a {
 }
 nav h1 {
     cursor: pointer;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 nav ul {
     display: flex;
@@ -78,7 +83,6 @@ nav .material-symbols-outlined {
     display: none;
     font-size: 30px;
 }
-/* Navbar end */
 /* Landing Page */
 #LandingPage {
     background: linear-gradient(360deg, #000 0%, #8F00FF 100%);
@@ -112,7 +116,6 @@ nav .material-symbols-outlined {
     max-width: 500px;
     max-height: 327px;
 }
-/* Landing Page end */ 
 @media (max-width: 900px){
     #LandingPage {
         flex-direction: column;
@@ -124,7 +127,7 @@ nav .material-symbols-outlined {
 }
 @media (max-width: 400px){
     /* Added margin: 10px; to h1 for the gap bug in nav*/
-    h1 {
+    nav h1 {
         margin: 10px;
     }
     nav {
