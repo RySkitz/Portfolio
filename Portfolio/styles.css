@@ -40,9 +40,8 @@ a {
     color: white;
     text-decoration: none;
 }
-nav img{
-    width: 220px;
-    height: 35px;
+nav h1 {
+    cursor: pointer;
 }
 nav ul {
     display: flex;
