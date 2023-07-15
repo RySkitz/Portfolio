@@ -100,25 +100,26 @@ nav .material-symbols-outlined {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#LandingPage h4{
-    color: var(--pink);
-    font-size: .85rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-size: 1rem;
 }
 .LandingPage__TextHolder{
     margin-bottom: 20px;
 }
+.LandingPage__TextHolder h4{
+    color: var(--pink);
+    font-size: .85em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
 .LandingPage__TextHolder h2{
-    font-size: 2rem;
+    font-size: 2em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 .LandingPage__TextHolder p {
-    font-size: 1.25rem;
+    font-size: 1.25em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;        
@@ -171,6 +172,7 @@ nav .material-symbols-outlined {
 @media (max-width: 900px){
     #LandingPage {
         flex-direction: column;
+        font-size: .9rem;
     }
     .LandingPage__Image img{
         max-width: 400px;
@@ -215,18 +217,27 @@ nav .material-symbols-outlined {
     .closed ul {
         display: none;
     }
+    #LandingPage{
+        font-size: .85rem
+    }
+    .LandingPage__TextHolder h4{
+        font-size: 16px;
+    }
     .LandingPage__Image img{
         max-width: 300px;
         max-height: 196px;
     }
+    #MessageMe{
+        padding: 20px 10px;
+    }
     .MessageMe_TextHolder h4{
-        font-size: 8px;
+        font-size: 12px;
     }
     .MessageMe_TextHolder h2{
-        font-size: 16px;
+        font-size: 20px;
     }
     .MessageMe_Button button {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 @media (max-width: 300px){
