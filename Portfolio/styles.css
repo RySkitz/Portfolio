@@ -27,6 +27,12 @@ body{
 .blue {
     color: var(--blue);
 }
+.gradient {
+    background: linear-gradient(90deg, #1BAEFF 0%, #FF5CBE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* Navbar */
 nav{
     background: var(--violet);
@@ -93,7 +99,7 @@ nav .material-symbols-outlined {
     justify-content: center;
     align-items: center;
 }
-#LandingPage  h4{
+#LandingPage h4{
     color: var(--pink);
     font-size: .85rem;
     font-style: normal;
