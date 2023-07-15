@@ -5,6 +5,7 @@
     --blue: #1BAEFF;
     --grey: #272727;
     --pink: #FF5CBE;
+    --green: #2EB048;
 }
 img.emoji {
     height: 1em;
@@ -54,7 +55,7 @@ nav h1 {
     font-weight: 700;
     line-height: normal;
 }
-nav ul {
+nav ul {    
     display: flex;
     list-style: none;
 }
@@ -64,6 +65,7 @@ nav ul li {
     font-weight: 600;
     line-height: normal;
     margin: 0px 10px;
+
 }
 nav ul li a{
     color: white;
@@ -106,6 +108,9 @@ nav .material-symbols-outlined {
     font-weight: 300;
     line-height: normal;
 }
+.LandingPage__TextHolder{
+    margin-bottom: 20px;
+}
 .LandingPage__TextHolder h2{
     font-size: 2rem;
     font-style: normal;
@@ -115,12 +120,53 @@ nav .material-symbols-outlined {
 .LandingPage__TextHolder p {
     font-size: 1.25rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;        
 }
 .LandingPage__Image img{
     max-width: 500px;
     max-height: 327px;
+}
+/* Message Me */
+#MessageMe{
+    font-family: var(--font-family);
+    border-radius: 10px;
+    background: linear-gradient(270deg, #FF5CBE 0%, #8F00FF 100%);
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 70px;
+    color: #FFF;
+    margin-bottom: 40px;
+}
+.MessageMe_TextHolder h4{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+.MessageMe_TextHolder h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.MessageMe__Button button {
+    font-family: var(--font-family);
+    background-color: var(--grey);
+    color: white;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 70px;
+    border: 0px;
+    cursor:pointer;
+    transition: 200ms;
+}
+.MessageMe__Button button:hover{
+    background-color: var(--blue);
+    transition: 200ms;
+    box-shadow: 0px 0px 15px white;
 }
 @media (max-width: 900px){
     #LandingPage {
@@ -131,46 +177,56 @@ nav .material-symbols-outlined {
         max-height: 262px;
     }
 }
-@media (max-width: 400px){
-    /* Added margin: 10px; to h1 for the gap bug in nav*/
-    nav h1 {
-        margin: 10px;
+@media (max-width: 768px){
+    #MessageMe{
+        flex-direction: column;
     }
-    nav {
+    .MessageMe_TextHolder{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 400px){
+    nav{
         padding: 0px;
     }
-    nav ul li {
-        display: none;
+    nav h1 {
+        margin: 10px;
     }
     nav .material-symbols-outlined {
         position: absolute;
         display: block;
         top: 10px;
         right: 10px;
-    } 
-    .closed ul {
-        position: absolute;
-        top: -100px;
-        transition: 500ms;
     }
-    .opened ul {
+    nav ul {
+        position: absolute;
         flex-direction: column;
-        background-color: var(--grey);
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        border: 0px;
-        position: absolute;
         top: 0;
-        transition: 500ms;
+        left: 0;
+        background-color: var(--grey);
+        width: 100%;
     }
-    .opened ul li {
-        display: block;
+    nav ul li{
         margin: 20px;
+    }
+    .opened ul{
+        display: block;
+    }
+    .closed ul {
+        display: none;
     }
     .LandingPage__Image img{
         max-width: 300px;
         max-height: 196px;
+    }
+    .MessageMe_TextHolder h4{
+        font-size: 8px;
+    }
+    .MessageMe_TextHolder h2{
+        font-size: 16px;
+    }
+    .MessageMe_Button button {
+        font-size: 16px;
     }
 }
 @media (max-width: 300px){
